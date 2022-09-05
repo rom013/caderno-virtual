@@ -1,0 +1,33 @@
+@media only screen and (max-width: 800px){
+    main{
+        margin: 3rem 24px;
+    }
+    .title{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .box-navegation a{
+        font-size: 1rem;
+    }
+    .back{
+        left: 24px;
+    }
+
+    .box-content div{
+        width: 100%;
+        height: 100px;
+    }
+    .box-content svg{
+        width: 20%;
+        fill: #fff;
+    }
+    .list-h{
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .table{
+        width: 100%;
+        overflow-x: auto;
+    }
+}

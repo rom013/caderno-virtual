@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAGS</title>
+
+    <link rel="shortcut icon" href="../../../img/code-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+    <button class="back" onclick="window.location.href = '/module1/pw/css'">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+    </button>
+    <h1 class="title" style="text-align: center; display: block;">PROPRIEDADES</h1>
+    <main>
+        <nav>
+            <a href="#meta" style="background: #f00;">BORDA</a>
+            <a href="#" style="background: #8A008D;">MARGEM</a>
+            <a href="#" style="background: #00FF19;">PADDING</a>
+            <a href="#img" style="background: #FFB800;">ESPAÇAMENTO</a>
+            <a href="#" style="background: #0047FF;">FORMATAÇÃO VISUAL</a>
+            <a href="#basic" style="background: #FF00C7;">DIMENSÃO</a>
+            <a href="#style" style="background: #FFE600;">BACKGROUND</a>
+            <a href="#midia" style="background: #00B2FF;">FONTES</a>
+            <a href="#table" style="background: #33FF00;">TEXTO</a>
+            <a href="#list" style="background: #f00;">TABELAS</a>
+            <a href="#list" style="background: rgb(72, 0, 255);">UI</a>
+        </nav>
+
+        <section>
+            <h3 id="meta">
+                <a href="#meta">#</a>
+                Borda
+            </h3>
+
+            <div class="content">
+                <p>Tag para inserir as configurações iniciais do documento.</p>
+
+                <div class="table" style="width: 100%;">
+                    <table>
+                        <tr>
+                            <th>Propriedade</th>
+                            <th>Descrição</th>
+                            <th>Valores</th>
+                            <th>Exemplos</th>
+                        </tr>
+                        <tr>
+                            <td>border-top-width | border-bottom-width | border-left-width | border-right-width</td>
+                            <td>Define a largura da borda separadamente.</td>
+                            <td>[thin | medium | thick | &lttamanho&gt]</td>
+                            <td>e { border-top-width: 15px } - a borda do topo terá 15px</td>
+                        </tr>
+
+                        <tr>
+                            <td>border-width</td>
+                            <td>Atalho para definir de uma só vez a largura das bordas.</td>
+                            <td>[thin | medium | thick | &lttamanho&gt]</td>
+                            <td>e { border-width: 15px } - todas as bordas terão 15px</td>
+                        </tr>
+
+                        <tr>
+                            <td>border-top-color | border-bottom-color | border-left-color | border-right-color</td>
+                            <td>Define a cor das bordas separadamente.</td>
+                            <td>[cor | transparent]</td>
+                            <td>e { border-top-color: #00FF19 } - a borda do topo terá a cor #00FF19</td>
+                        </tr>
+
+                        <tr>
+                            <td>border-color</td>
+                            <td>Atalho para definir de uma só vez a cor das bordas.</td>
+                            <td>[cor | transparent]</td>
+                            <td>e { border-color: #f00 } - todas as bordas terão a cor #f00</td>
+                        </tr>
+
+                        <tr>
+                            <td>border-top-style | border-bottom-style | border-left-style | border-right-style</td>
+                            <td>Define o estilo das bordas separadamente.</td>
+                            <td>[solid | dash | none | hidden | dotted | double | groove | ridge]</td>
+                            <td>e { border-top-style: solid } - a borda do topo terá estilo sólido</td>
+                        </tr>
+
+                        <tr>
+                            <td>border-style</td>
+                            <td>Atalho para definir de uma só vez o estilo das bordas.</td>
+                            <td>[solid | dash | none | hidden | dotted | double | groove | ridge]</td>
+                            <td>e { border-style: solid } - todas as bordas terão o estilo sólido</td>
+                        </tr>
+                        <tr>
+                            <td>border</td>
+                            <td>Atalho para definir de uma só vez o estilo, a cor e a largura das bordas.</td>
+                            <td>[border-width | border-style | border-color]</td>
+                            <td>e { border: 5px solid #f00} - todas as bordas terão o mesmo estilo, a mesma cor e a mesma largura</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h3 id="meta">
+                <a href="#meta">#</a>
+                Margem
+            </h3>
+
+            <div class="content">
+                <p>Tag para inserir as configurações iniciais do documento.</p>
+
+                <div class="table" style="width: 100%;">
+                    <table>
+                        <tr>
+                            <th>Propriedade</th>
+                            <th>Descrição</th>
+                            <th>Valores</th>
+                            <th>Exemplos</th>
+                        </tr>
+                        <tr>
+                            <td>margin-top | margin-bottom | margin-left | margin-right</td>
+                            <td>Define a margem do elemento separadamente.</td>
+                            <td>[&lttamanho&gt | &ltporcentagem&gt | auto]</td>
+                            <td>e { margin-top: 15px } - a margem do topo terá 15px</td>
+                        </tr>
+                        <tr>
+                            <td>margin</td>
+                            <td>Atalho para definir de uma só vez tamanho da margem para todos os lados.</td>
+                            <td>[&lttamanho&gt | &ltporcentagem&gt | auto]</td>
+                            <td>e { margin: 1rem } - todas as margens terá 1rem</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="meta">
+                <a href="#meta">#</a>
+                Espaçamento
+            </h3>
+
+            <div class="content">
+                <p>Tag para inserir as configurações iniciais do documento.</p>
+
+                <div class="table" style="width: 100%;">
+                    <table>
+                        <tr>
+                            <th>Propriedade</th>
+                            <th>Descrição</th>
+                            <th>Valores</th>
+                            <th>Exemplos</th>
+                        </tr>
+                        <tr>
+                            <td>padding-top | padding-bottom | padding-left | padding-right</td>
+                            <td>Define o espaçamento do elemento separadamente.</td>
+                            <td>[&lttamanho&gt | &ltporcentagem&gt]</td>
+                            <td>e { margin-top: 15px } - a margem do topo terá 15px</td>
+                        </tr>
+                        <tr>
+                            <td>padding</td>
+                            <td>Atalho para definir de uma só vez tamanho do espaçamento para todos os lados.</td>
+                            <td>[&lttamanho&gt | &ltporcentagem&gt]</td>
+                            <td>e { padding: 1rem } - todos os lados terá 1rem de espaçamento</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="meta">
+                <a href="#meta">#</a>
+                Formatação visual
+            </h3>
+
+            <div class="content">
+                <p>Tag para inserir as configurações iniciais do documento.</p>
+
+                <div class="table" style="width: 100%;">
+                    <table>
+                        <tr>
+                            <th>Propriedade</th>
+                            <th>Descrição</th>
+                            <th>Valores</th>
+                            <th>Exemplos</th>
+                        </tr>
+                        <tr>
+                            <td>display</td>
+                            <td>Modos de exibição do conteúdo</td>
+                            <td>[inline | block | inline-block | grid | flex | none]</td>
+                            <td>e { display: none } - O elemento irá sumir, deixando um espaço vazio.</td>
+                        </tr>
+                        <tr>
+                            <td>position</td>
+                            <td>Esquema de posicionamento</td>
+                            <td>[relative | absolute | fixed | static | stick]</td>
+                            <td>e { position: relative } - Utilizando o position Relative o elemento passa a aceitar as propriedades Top, Bottom, Left e Right.</td>
+                        </tr>
+                        <tr>
+                            <td>top | right | bottom | left</td>
+                            <td>Distancia do elemento com relação à extremidade de seu elemento-pai</td>
+                            <td>[&lttamanho&gt | &ltporcentagem&gt | auto]</td>
+                            <td>e { top: 5rem } - O elemento ficará 5rem de distância do topo.</td>
+                        </tr>
+                        <tr>
+                            <td>z-index</td>
+                            <td>Nivel de profundidade de sobreposição de elemento</td>
+                            <td>[number]</td>
+                            <td>e { z-index: 10 } - O elemento ficará 10 níveis a cima.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="meta">
+                <a href="#meta">#</a>
+                Dimensão
+            </h3>
+
+            <div class="content">
+                <p>Tag para inserir as configurações iniciais do documento.</p>
+
+                <div class="table" style="width: 100%;">
+                    <table>
+                        <tr>
+                            <th>Propriedade</th>
+                            <th>Descrição</th>
+                            <th>Valores</th>
+                            <th>Exemplos</th>
+                        </tr>
+                        <tr>
+                            <td>width</td>
+                            <td>Define a largura do elemento</td>
+                            <td>[&ltporcentagem&gt | &lttamanho&gt | auto]</td>
+                            <td>e { width: 50rem } - O elemento terá 50rem de largura.</td>
+                        </tr>
+                        <tr>
+                            <td>max-width</td>
+                            <td>Define o máximo da largura do elemento</td>
+                            <td>[&ltporcentagem&gt | &lttamanho&gt | none]</td>
+                            <td>e { max-width: 500px } - O elemento pode ter até 500px de largura.</td>
+                        </tr>
+                        <tr>
+                            <td>min-width</td>
+                            <td>Define o minimo da largura do elemento</td>
+                            <td>[&ltporcentagem&gt | &lttamanho&gt]</td>
+                            <td>e { min-width: 50px } - O elemento tem que ter no minimo 50px de largura.</td>
+                        </tr>
+
+                        <tr>
+                            <td>height</td>
+                            <td>Define a altura do elemento</td>
+                            <td>[&ltporcentagem&gt | &lttamanho&gt | auto]</td>
+                            <td>e { height: 50rem } - O elemento terá 50rem de largura.</td>
+                        </tr>
+                        <tr>
+                            <td>max-height</td>
+                            <td>Define o máximo da altura do elemento</td>
+                            <td>[&ltporcentagem&gt | &lttamanho&gt | none]</td>
+                            <td>e { max-height: 500px } - O elemento pode ter até 500px de altura.</td>
+                        </tr>
+                        <tr>
+                            <td>min-height</td>
+                            <td>Define o minimo da altura do elemento</td>
+                            <td>[&ltporcentagem&gt | &lttamanho&gt]</td>
+                            <td>e { min-height: 50px } - O elemento tem que ter no minimo 50px de altura.</td>
+                        </tr>
+                        <tr>
+                            <td>text-align</td>
+                            <td>Alinhamento horizontal do texto</td>
+                            <td>[center | left | right | justify]</td>
+                            <td>e { text-alignt: center } - Deixa o texto centralizado</td>
+                        </tr>
+                        <tr>
+                            <td>vertical-align</td>
+                            <td>Alinhamento vertical do texto</td>
+                            <td>[baseline | sub | super | top | text-top | middle | bottom | &ltporcentagem&gt | &lttamanho&gt]</td>
+                            <td>e { vertical-alignt: middle } - Deixa o texto centralizado na vertical</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 id="meta">
+                <a href="#meta">#</a>
+                Background
+            </h3>
+
+            <div class="content">
+                <p>Tag para inserir as configurações iniciais do documento.</p>
+
+                <div class="table" style="width: 100%;">
+                    <table>
+                        <tr>
+                            <th>Propriedade</th>
+                            <th>Descrição</th>
+                            <th>Valores</th>
+                            <th>Exemplos</th>
+                        </tr>
+                        <tr>
+                            <td>color</td>
+                            <td>Define a cor do texto</td>
+                            <td>[&ltcolor&gt]</td>
+                            <td>e { color: rgb(0,0,0) } - O elemento terá a cor preta.</td>
+                        </tr>
+                        <tr>
+                            <td>background-color</td>
+                            <td>Define a cor de fundo do elemento</td>
+                            <td>[&ltcolor&gt | transparent]</td>
+                            <td>e { background-color: #00f } - O elemento terá a cor azul.</td>
+                        </tr>
+                        <tr>
+                            <td>background-image</td>
+                            <td>Imagem de fundo do elemento</td>
+                            <td>[url(...) | none]</td>
+                            <td>e { background-image: url(http://example.com) }</td>
+                        </tr>
+                        <tr>
+                            <td>background-repeat</td>
+                            <td>Define como a imagem de fundo se repetirá</td>
+                            <td>[repeat | no-repeat | repeat-x | repeat-y]</td>
+                            <td>e { background-repeat: no-repeat } - A imagem não repetirá.</td>
+                        </tr>
+                        <tr>
+                            <td>background-attachment</td>
+                            <td>Define se a imagem de fundo será fixa ou com rolagem</td>
+                            <td>[scroll | fixed]</td>
+                            <td>e { background-attachment: scroll } - A imagem acompanha a rolagem da página.</td>
+                        </tr>
+                        <tr>
+                            <td>background-position</td>
+                            <td>Define a posição da imagem de fundo</td>
+                            <td>[bottom | left | right | top | &ltporcentagem&gt | &lttamanho&gt]</td>
+                            <td>e { background-attachment: scroll } - A imagem acompanha a rolagem da página.</td>
+                        </tr>
+                        <tr>
+                            <td>background</td>
+                            <td>Atalho para definir de uma vez só todos as propriedades</td>
+                            <td>[background-color || background-image || background-repeat || background-attachment || background-position]</td>
+                            <td>e { background: #f00 } - O fundo da página será vermelho.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

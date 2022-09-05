@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rômullo Melo</title>
+
+    <link rel="shortcut icon" href="img/code-solid.svg" type="image/x-icon">
+    
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="https://github.com/rom013.png" alt="foto de perfil" >
+            <div class="network">
+                <a href="https://instagram.com/romu_013" target="_blank" class="insta" title="Instagram">
+                    <i class="ph-instagram-logo"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rômullo-melo-124007227/" target="_blank" class="linkedin" title="Linkedin">
+                    <i class="ph-linkedin-logo"></i>
+                </a>
+                <a href="https://github.com/rom013" target="_blank" class="git" title="Github">
+                    <i class="ph-github-logo"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bio">
+            <span>Olá! Eu sou</span>
+            <h1>Rômullo Melo</h1>
+            <p>
+                Estudo front-end a 1 ano. Atualmente estou estudando Desenvolvimento de sistemas.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <h2>Módulos</h2>
+
+        <section class="content-box">
+            <div class="box" data-="1">
+                <span>1º Módulo</span>
+            </div>
+            <div class="box block" data-="">
+                <span>Em Breve</span>
+            </div>
+            <div class="box block" data-="">
+                <span>Em Breve</span>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const t = Array.from(document.querySelectorAll(".box"))
+        t.forEach((e)=>{
+            e.addEventListener('click', ()=>test(e.attributes[1].value))
+        })
+
+        function test(e){
+            e == "" ? null : window.location.href = `module${e}`
+        }
+    </script>
+</body>
+</html>
