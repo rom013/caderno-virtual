@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,282 +20,297 @@
 
     <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
+
 <body>
-    <button class="back" onclick="window.location.href = '../'">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-    </button>
-    <h1 class="title" style="text-align: center; display: block;">TAGS</h1>
-    <main>
-        <nav>
-            <a href="#meta" style="background: #f00;">META</a>
-            <a class="block" style="background: #8A008D;">LINKS</a>
-            <a class="block" style="background: #00FF19;">PROGRAMAÇÃO</a>
-            <a href="#img" style="background: #FFB800;">IMAGENS</a>
-            <a class="block" style="background: #0047FF;">FORM & INPUT</a>
-            <a href="#basic" style="background: #FF00C7;">BÁSICO</a>
-            <a href="#style" style="background: #FFE600;">SEMANTICA & ESTILOS</a>
-            <a href="#midia" style="background: #00B2FF;">AUDIO & VIDEO</a>
-            <a href="#table" style="background: #33FF00;">TABELAS</a>
-            <a href="#list" style="background: #f00;">LISTA</a>
-        </nav>
+    <header>
+        <button class="back" onclick="window.location.href = './'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
+        </button>
+        <h1 class="title">&lt/TAGS&gt</h1>
+    </header>
+    <div class="main">
+        <article>
+            <nav>
+                <a href="#meta" >META</a>
+                <a class="block">LINKS</a>
+                <a class="block">PROGRAMAÇÃO</a>
+                <a href="#img">IMAGENS</a>
+                <a class="block">FORM & INPUT</a>
+                <a href="#basic">BÁSICO</a>
+                <a href="#style">SEMANTICA & ESTILOS</a>
+                <a href="#midia">AUDIO & VIDEO</a>
+                <a href="#table">TABELAS</a>
+                <a href="#list" >LISTA</a>
+            </nav>
+        </article>
+        <main>
 
-        <section>
-            <h3 id="meta">
-                <a href="#meta">#</a>
-                META
-            </h3>
+            <section>
+                <h3 id="meta">
+                    <a href="#meta">#</a>
+                    META
+                </h3>
 
-            <div class="content">
-                <p>Tag para inserir as configurações iniciais do documento.</p>
+                <div class="content">
+                    <p>Tag para inserir as configurações iniciais do documento.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&ltmeta&gt</td>
-                            <td>Define metadados sobre um documento HTML</td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>&ltmeta&gt</td>
+                                <td>Define metadados sobre um documento HTML</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h3 id="img">
-                <a href="#img">#</a>
-                IMAGENS
-            </h3>
+            <section>
+                <h3 id="img">
+                    <a href="#img">#</a>
+                    IMAGENS
+                </h3>
 
-            <div class="content">
-                <p>Tags para inserir figuras e imagens.</p>
+                <div class="content">
+                    <p>Tags para inserir figuras e imagens.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&ltimg&gt</td>
-                            <td>Define uma imagem</td>
-                        </tr>
-                        <tr>
-                            <td>&ltsvg&gt</td>
-                            <td>Define uma contêiner para SVG</td>
-                        </tr>
-                        <tr>
-                            <td>&ltcanvas&gt</td>
-                            <td>Usado para desenhar gráficos, em tempo real, via script (geralmente JavaScript)</td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>&ltimg&gt</td>
+                                <td>Define uma imagem</td>
+                            </tr>
+                            <tr>
+                                <td>&ltsvg&gt</td>
+                                <td>Define uma contêiner para SVG</td>
+                            </tr>
+                            <tr>
+                                <td>&ltcanvas&gt</td>
+                                <td>Usado para desenhar gráficos, em tempo real, via script (geralmente JavaScript)</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        
 
-        <section>
-            <h3 id="basic">
-                <a href="#basic">#</a>
-                BÁSICO
-            </h3>
 
-            <div class="content">
-                <p>Tags basicas para iniciar um documento HTML.</p>
+            <section>
+                <h3 id="basic">
+                    <a href="#basic">#</a>
+                    BÁSICO
+                </h3>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&lth1&gt até &lth6&gt</td>
-                            <td>Usado para títulos, sendo o h1 mais forte e h6 mais fraco</td>
-                        </tr>
-                        <tr>
-                            <td>&ltp&gt</td>
-                            <td>Define um paragrafo</td>
-                        </tr>
-                        <tr>
-                            <td>&lthtml&gt</td>
-                            <td>Define a raiz de um documento HTML</td>
-                        </tr>
-                        <tr>
-                            <td>&lthead&gt</td>
-                            <td>Contém metadados, informações e configurações para o documento</td>
-                        </tr>
-                        <tr>
-                            <td>&lttile&gt</td>
-                            <td>Titulo do documento</td>
-                        </tr>
-                        <tr>
-                            <td>&ltbody&gt</td>
-                            <td>Define o corpo do documento</td>
-                        </tr>
-                        <tr>
-                            <td>&lt!DOCTYPE&gt</td>
-                            <td>Define o tipo do documento</td>
-                        </tr>
-                    </table>
+                <div class="content">
+                    <p>Tags basicas para iniciar um documento HTML.</p>
+
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>&lth1&gt até &lth6&gt</td>
+                                <td>Usado para títulos, sendo o h1 mais forte e h6 mais fraco</td>
+                            </tr>
+                            <tr>
+                                <td>&ltp&gt</td>
+                                <td>Define um paragrafo</td>
+                            </tr>
+                            <tr>
+                                <td>&lthtml&gt</td>
+                                <td>Define a raiz de um documento HTML</td>
+                            </tr>
+                            <tr>
+                                <td>&lthead&gt</td>
+                                <td>Contém metadados, informações e configurações para o documento</td>
+                            </tr>
+                            <tr>
+                                <td>&lttile&gt</td>
+                                <td>Titulo do documento</td>
+                            </tr>
+                            <tr>
+                                <td>&ltbody&gt</td>
+                                <td>Define o corpo do documento</td>
+                            </tr>
+                            <tr>
+                                <td>&lt!DOCTYPE&gt</td>
+                                <td>Define o tipo do documento</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h3 id="style">
-                <a href="#style">#</a>
-                SEMÂNTICA & ESTILOS
-            </h3>
+            <section>
+                <h3 id="style">
+                    <a href="#style">#</a>
+                    SEMÂNTICA & ESTILOS
+                </h3>
 
-            <div class="content">
-                <p>Conjunto de tags semânticas e de estilos.</p>
+                <div class="content">
+                    <p>Conjunto de tags semânticas e de estilos.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&ltaside&gt</td>
-                            <td>Define o conteúdo, aside do conteúdo da página</td>
-                        </tr>
-                        <tr>
-                            <td>&ltsection&gt</td>
-                            <td>Define uma seção para o conteúdo da página</td>
-                        </tr>
-                        <tr>
-                            <td>&ltfooter&gt</td>
-                            <td>Define um rodapé para o conteúdo da página</td>
-                        </tr>
-                        <tr>
-                            <td>&ltspan&gt</td>
-                            <td>Define uma pequena seção em um documento <span style="color: red; font-weight: 800;">*</span></td>
-                        </tr>
-                        <tr>
-                            <td>&ltstyle&gt</td>
-                            <td>Abre um css dentro do proprio documento HTML</td>
-                        </tr>
-                        <tr>
-                            <td>&ltdiv&gt</td>
-                            <td>Cria uma seção ou divisão no conteúdo <span style="color: red; font-weight: 800;">*</span></td>
-                        </tr>
-                        <tr>
-                            <td>&ltheader&gt</td>
-                            <td>Define um cabeçalho para o conteúdo da página</td>
-                        </tr>
-                        <tr>
-                            <td>&ltmain&gt</td>
-                            <td>Define o conteúdo principal da página</td>
-                        </tr>
-                        <tr>
-                            <td>&ltarticle&gt</td>
-                            <td>Representa uma composição independente em um documento, página, aplicação, ou site</td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>&ltaside&gt</td>
+                                <td>Define o conteúdo, aside do conteúdo da página</td>
+                            </tr>
+                            <tr>
+                                <td>&ltsection&gt</td>
+                                <td>Define uma seção para o conteúdo da página</td>
+                            </tr>
+                            <tr>
+                                <td>&ltfooter&gt</td>
+                                <td>Define um rodapé para o conteúdo da página</td>
+                            </tr>
+                            <tr>
+                                <td>&ltspan&gt</td>
+                                <td>Define uma pequena seção em um documento <span
+                                        style="color: red; font-weight: 800;">*</span></td>
+                            </tr>
+                            <tr>
+                                <td>&ltstyle&gt</td>
+                                <td>Abre um css dentro do proprio documento HTML</td>
+                            </tr>
+                            <tr>
+                                <td>&ltdiv&gt</td>
+                                <td>Cria uma seção ou divisão no conteúdo <span
+                                        style="color: red; font-weight: 800;">*</span></td>
+                            </tr>
+                            <tr>
+                                <td>&ltheader&gt</td>
+                                <td>Define um cabeçalho para o conteúdo da página</td>
+                            </tr>
+                            <tr>
+                                <td>&ltmain&gt</td>
+                                <td>Define o conteúdo principal da página</td>
+                            </tr>
+                            <tr>
+                                <td>&ltarticle&gt</td>
+                                <td>Representa uma composição independente em um documento, página, aplicação, ou site
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h3 id="midia">
-                <a href="#midia">#</a>
-                AUDIO & VIDEO
-            </h3>
+            <section>
+                <h3 id="midia">
+                    <a href="#midia">#</a>
+                    AUDIO & VIDEO
+                </h3>
 
-            <div class="content">
-                <p>Conjunto de tags para inserir conteúdos de mídia.</p>
+                <div class="content">
+                    <p>Conjunto de tags para inserir conteúdos de mídia.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&ltaudio&gt</td>
-                            <td>Define o conteúdo de som incorporado</td>
-                        </tr>
-                        <tr>
-                            <td>&ltvideo&gt</td>
-                            <td>Define o conteúdo de vídeo incorporado</td>
-                        </tr>
-                        <tr>
-                            <td>&ltsource&gt</td>
-                            <td>Define vários recursos de mídia para elementos de mídia (&ltvideo&gt and &ltaudio&gt)</td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>&ltaudio&gt</td>
+                                <td>Define o conteúdo de som incorporado</td>
+                            </tr>
+                            <tr>
+                                <td>&ltvideo&gt</td>
+                                <td>Define o conteúdo de vídeo incorporado</td>
+                            </tr>
+                            <tr>
+                                <td>&ltsource&gt</td>
+                                <td>Define vários recursos de mídia para elementos de mídia (&ltvideo&gt and
+                                    &ltaudio&gt)</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h3 id="table">
-                <a href="#table">#</a>
-                TABELAS
-            </h3>
+            <section>
+                <h3 id="table">
+                    <a href="#table">#</a>
+                    TABELAS
+                </h3>
 
-            <div class="content">
-                <p>Conjunto de tags para criar uma tabela.</p>
+                <div class="content">
+                    <p>Conjunto de tags para criar uma tabela.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&lttable&gt</td>
-                            <td>Define uma tabela</td>
-                        </tr>
-                        <tr>
-                            <td>&ltth&gt & &lttd&gt</td>
-                            <td>Define uma célula em uma tabela e th uma célula de cabeçalho</td>
-                        </tr>
-                        <tr>
-                            <td>&lttr&gt</td>
-                            <td>Define uma linha da tabela</td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>&lttable&gt</td>
+                                <td>Define uma tabela</td>
+                            </tr>
+                            <tr>
+                                <td>&ltth&gt & &lttd&gt</td>
+                                <td>Define uma célula em uma tabela e th uma célula de cabeçalho</td>
+                            </tr>
+                            <tr>
+                                <td>&lttr&gt</td>
+                                <td>Define uma linha da tabela</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h3 id="list">
-                <a href="#list">#</a>
-                LISTA
-            </h3>
+            <section>
+                <h3 id="list">
+                    <a href="#list">#</a>
+                    LISTA
+                </h3>
 
-            <div class="content">
-                <p>Conjunto de tags para criar uma lista.</p>
+                <div class="content">
+                    <p>Conjunto de tags para criar uma lista.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&ltul&gt</td>
-                            <td>Define uma lista não ordenada</td>
-                        </tr>
-                        <tr>
-                            <td>&ltol&gt</td>
-                            <td>Define uma lista ordenada</td>
-                        </tr>
-                        <tr>
-                            <td>&ltli&gt</td>
-                            <td>Define um item de uma lista</td>
-                        </tr>
-                    </table>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Descrição</th>
+                            </tr>
+                            <tr>
+                                <td>&ltul&gt</td>
+                                <td>Define uma lista não ordenada</td>
+                            </tr>
+                            <tr>
+                                <td>&ltol&gt</td>
+                                <td>Define uma lista ordenada</td>
+                            </tr>
+                            <tr>
+                                <td>&ltli&gt</td>
+                                <td>Define um item de uma lista</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA | Variáveis (C#)</title>
+
+    <link rel="shortcut icon" href="../../../img/code-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <button class="back" onclick="window.location.href = './'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
+        </button>
+        <h1 class="title">Variáveis (C#)</h1>
+    </header>
+    <div class="main">
+        <article>
+            <nav>
+                <a href="#varieble">Declarando variáveis</a>
+                <a href="#value">Declarando valores</a>
+                <a href="#typeData">Tipos de dados</a>
+            </nav>
+        </article>
+        <main>
+            <section>
+                <h3 id="varieble">
+                    <a href="#varieble">#</a>
+                    Declarando variáveis
+                </h3>
+
+                <div class="content">
+                    <p>
+                        Na programação, uma variável é um espaço que fica reservado na memória do computador, durante o
+                        tempo de execução do programa, para ser usada em outro momento do código. As variáveis são
+                        usadas para armazenar valores.
+                    </p>
+                    <p>
+                        No C# toda variável deve ter: modificador de acesso, tipo de dados (linguagem tipada) e nome.
+                    </p>
+                    <p>
+                        Antes de usar uma variável é necessário declará-la. Para isso precisamos dizemos que tipo de
+                        dado pode ser armazenado nela. O tipo de dado indica qual o tamanho do espaço vai ser reservado
+                        para a variável.
+                    </p>
+                    <p>
+                        No C# pode armazenar diferentes tipos de dados: como inteiros, números de ponto flutuante,
+                        textos e caracteres.
+                    </p>
+                    <p>
+                        Veja o exemplo a baixo:
+                    </p>
+
+                    <pre>
+                        <code>
+                            <span class="number-line">1</span>
+                            <span class="contrast">int </span>
+                            <span>number = </span>
+                            <span class="number">13</span>
+                            <span>;</span>
+                        </code>
+                    </pre>
+
+                    <p>
+                        Esse exemplo declara uma variável chamada number e que aceita apenas valores inteiros.
+                    </p>
+
+                    <p>
+                        Também é possível declarar múltiplas variáveis.
+                    </p>
+
+                    <pre>
+                        <code>
+                            <span class="number-line">1</span>
+                            <span class="contrast">int </span>
+                            <span>number</span>
+                            <span>;</span>
+                        </code>
+                        <code>
+                            <span class="number-line">2</span>
+                            <span class="contrast">int </span>
+                            <span>year, </span>
+                            <span>age, </span>
+                            <span>height</span>
+                            <span>;</span>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <section>
+                <h3 id="value">
+                    <a href="#value">#</a>
+                    Declarando valores
+                </h3>
+
+                <div class="content">
+                    <p>
+                        Após declarar a variável, você precisa atribuir um valor a ela, se não atribuir nenhum valor irá disparar um erro de compilação.
+                    </p>
+                    <p>Veja o exemplo a baixo de como atribuir um valor a uma variável:</p>
+
+                    <pre>
+                        <code>
+                            <span class="number-line">1</span>
+                            <span class="contrast">float </span>
+                            <span>idade = <span class="number">1.82</span></span>
+                            <span>;</span>
+                        </code>
+                    </pre>
+                    <p>
+                        Declarei uma variável idade que aceita apenas dados do tipo float e em seguida atribui um valor a ela (1.82). 
+                        Podemos entender o sinal de igual como receber. Assim idade recebe 1.82
+                    </p>
+            </section>
+            <section>
+                <h3 id="typeData">
+                    <a href="#typeData">#</a>
+                    Tipos de dados
+                </h3>
+
+                <div class="content">
+                    <p>
+                        Na tabela a seguir temos os tipos que o C# aceita. Os valores contidos na tabela são conhecidos como tipos internos ou Built-in.
+                    </p>
+
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>C# Type</th>
+                                <th>.NET Framework type</th>
+                            </tr>
+                            <tr>
+                                <td>bool</td>
+                                <td>System.Boolean</td>
+                            </tr>
+                            <tr>
+                                <td>byte</td>
+                                <td>System.Byte</td>
+                            </tr>
+                            <tr>
+                                <td>sbyte</td>
+                                <td>	System.SByte</td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>System.Char</td>
+                            </tr>
+                            <tr>
+                                <td>decimal</td>
+                                <td>System.Decimal</td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>System.Double</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>System.Single</td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>System.Int32</td>
+                            </tr>
+                            <tr>
+                                <td>uint</td>
+                                <td>System.UInt32</td>
+                            </tr>
+                            <tr>
+                                <td>long</td>
+                                <td>System.Int64</td>
+                            </tr>
+                            <tr>
+                                <td>ulong</td>
+                                <td>System.UInt64</td>
+                            </tr>
+                            <tr>
+                                <td>object</td>
+                                <td>System.Object</td>
+                            </tr>
+                            <tr>
+                                <td>short</td>
+                                <td>System.Int16</td>
+                            </tr>
+                            <tr>
+                                <td>ushort</td>
+                                <td>System.UInt16</td>
+                            </tr>
+                            <tr>
+                                <td>string</td>
+                                <td>System.String</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <p>
+                        Cada tipo no C# (C# Type)é um atalho para o tipo do Framework (Framework type). Isso quer dizer que se declararmos a variável desta forma: string nome; ou dessa forma System.String nome; vai acontecer a mesma coisa.
+                    </p>
+                    <p>
+                        A próxima tabela vai mostra a capacidade para cada tipo de dado.
+                    </p>
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>C# Type</th>
+                                <th>Capacidade</th>
+                            </tr>
+                            <tr>
+                                <td>bool</td>
+                                <td>Verdadeiro ou Falso (Valores booleandos)</td>
+                            </tr>
+                            <tr>
+                                <td>byte</td>
+                                <td>0 a 255 (8 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>sbyte</td>
+                                <td>-128 a 127 (8 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>char</td>
+                                <td>Um caractere (16 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>decimal</td>
+                                <td>±1.0 × 10−28 a ±7.9 × 1028 (128 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>double</td>
+                                <td>±5.0 × 10−324 a ±1.7 × 10308 (64 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>±1.5 × 10−45 a ±3.4 × 1038 (32 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>int</td>
+                                <td>-2,147,483,648 a 2,147,483,647 (32 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>uint</td>
+                                <td>0 a 4,294,967,295 (32 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>long</td>
+                                <td>–9,223,372,036,854,775,808 a 9,223,372,036,854,775,807 (64 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>ulong</td>
+                                <td>0 a 18,446,744,073,709,551,615 (64 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>object</td>
+                                <td>Qualquer tipo.</td>
+                            </tr>
+                            <tr>
+                                <td>short</td>
+                                <td>-32,768 a 32,767 (16 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>ushort</td>
+                                <td>0 a 65,535 (16 bits)</td>
+                            </tr>
+                            <tr>
+                                <td>string</td>
+                                <td>Sequência de caracteres (16 bits por caractere)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

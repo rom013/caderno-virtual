@@ -7,13 +7,56 @@ body {
     background-size: 89px 89px;
     background-position: 0 0, 44.5px 44.5px;
 }
-
+header{
+    width: 100%;
+    height: 280px;
+    background: radial-gradient(circle, transparent 20%, #7e00ff 20%, #7e00ff 80%, transparent 80%, transparent) 0% 0% / 76px 76px, radial-gradient(circle, transparent 20%, #7e00ff 20%, #7e00ff 80%, transparent 80%, transparent) 38px 38px / 76px 76px, linear-gradient(#b671ff 2.5px, transparent 2.5px) 0px -1.25px / 38px 38px, linear-gradient(90deg, #b671ff 2.5px, #7e00ff 2.5px) -1.25px 0px / 38px 38px #7e00ff;
+    background-color: #7e00ff;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: test 60s infinite ease-in-out;
+}
+@keyframes test{
+    0%{
+        background-position: 0 0;   
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+header .title {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 40px;
+    margin: 0;
+}
+.main{
+    margin: 3rem 64px;
+    width: 90vw;
+    display: inline-block;
+}
+.main main{
+    float: left;
+    width: calc(100% - 250px);
+    background-color: #FFFFFF;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0;
+}
 main{
     margin: 3rem 64px;
 }
-h1 {
-    font-size: 2rem;
-    font-weight: 800;
+article{ 
+    float: right;
+    width: 200px;
 }
 .block {
     cursor: not-allowed !important;
@@ -24,6 +67,8 @@ h1 {
     margin-bottom: 80px;
     margin-top: 40px;
     display: inline-block;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 .back{
@@ -36,27 +81,34 @@ h1 {
 
 nav{
     display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
     max-width: 1200px;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0 auto;
+    padding: 40px 10px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
 }
 nav a{
-    padding: 10px 24px;
-    border-radius: 16px;
-    background: rebeccapurple;
-    color: #fff;
+    /* padding: 10px 24px; */
+    color: #000;
+    padding: 5px;
+    border-radius: 8px;
     transition: .4s;
-    -webkit-box-shadow: 4px 6px 4.5px 0 #b9b9b9;
-    -moz-box-shadow: 4px 6px 4.5px 0 #b9b9b9;
-    box-shadow: 4px 6px 4.5px 0 #b9b9b9;
+}
+nav a::before{
+    content: "</> ";
+    color: #7e00ff;
     font-weight: 800;
 }
 
+nav a:hover{
+    background-color: #dadada;
+}
 section{
     width: 100%;
-    margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 section h3{
@@ -67,6 +119,11 @@ section h3{
 
 section a{
     color: #7e00ff
+}
+
+section p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
 }
 .content{
     margin-top: 8px;
@@ -169,5 +226,59 @@ th{
     fill: #fff;
 }
 
+
+pre{
+    background: #263238 !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 16px !important;
+    width: 60%;
+    border-radius: 8px;
+    margin: 40px auto;
+    white-space: normal;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+code{
+    color: #fff;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    text-align: left;
+    display: flex;
+    gap: 5px;
+}
+
+code .number-line {
+    margin-left: 30px;
+    margin-right: 20px;
+    position: relative;
+    color: #aaa;
+}
+
+code .number-line::after {
+    content: "";
+    width: 2px;
+    height: 30px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: -50%;
+}
+
+code .contrast{
+    color: #5292c7;
+    font-weight: 800;
+}
+
+code .string{
+    color: #ce9178;
+}
+code .number{
+    color: #adc5a1;
+}
 
 /* [#e5ccff, #cb99ff, #b266ff, #7e00ff, #6500cc, #4c0099, #320066] */

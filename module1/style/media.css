@@ -2,8 +2,19 @@
     main{
         margin: 3rem 24px;
     }
+
+    article{
+        display: none;
+    }
+    .main{
+        margin: 0;
+        width: 100%;
+    }
+    .main main{
+        width: 100% !important;
+    }
     .title{
-        font-size: 1rem;
+        font-size: 2rem !important;
         margin-bottom: 2rem;
     }
     .box-navegation a{
@@ -29,5 +40,8 @@
     .table{
         width: 100%;
         overflow-x: auto;
+    }
+    pre{
+        width: 100%;
     }
 }
