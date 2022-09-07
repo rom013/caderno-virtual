@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA | Introdução</title>
+
+    <link rel="shortcut icon" href="../../../img/code-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <button class="back" onclick="window.location.href = './'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
+        </button>
+        <h1 class="title">INTRODUÇÃO</h1>
+    </header>
+    <div class="main">
+        <article>
+            <nav>
+                <a href="#intro">Introdução</a>
+                <a href="#hello">Hello World</a>
+            </nav>
+        </article>
+        <main>
+            <section>
+                <h3 id="intro">
+                    <a href="#intro">#</a>
+                    Introdução
+                </h3>
+
+                <div class="content">
+                    <p>
+                        O C# (pronuncia-se "C Sharp") é uma linguagem de programação moderna, orientada a objeto e
+                        fortemente tipada e criada com a arquitetura da plataforma .NET da Microsoft. O C# permite que
+                        os desenvolvedores criem muitos tipos de aplicativos seguros. O C# é uma linguagem de
+                        programação orientada a objetos e orientada a componentes.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3 id="hello">
+                    <a href="#hello">#</a>
+                    Hello World
+                </h3>
+
+                <div class="content">
+                    <p>
+                        Quando iniciamos o estudo de uma nova linguagem, geralmente o primeiro comando a ser usado é o
+                        comando de escrita com a frase "Hello World".
+                    </p>
+                    <p>
+                        Veja como escrever "Hello World" em C#.
+                    </p>
+
+                    <pre>
+                        <code>
+                            <span class="number-line">1</span>
+                            <span class="contrast">using</span>
+                            <span>System;</span>
+                        </code>
+                        <code>
+                            <span class="number-line">2</span>
+                        </code>
+                        <code>
+                            <span class="number-line">3</span>
+                            <span class="contrast">class</span>
+                            <span></span>Hello {</span>
+                        </code>
+                        <code>
+                            <span class="number-line">4</span>
+                            <span style="margin-left: 1rem;"class="contrast">static void Main</span>
+                            <span></span>(){</span>
+                        </code>
+                        <code>
+                            <span class="number-line">5</span>
+                            <span style="margin-left: 2rem;">Console.WriteLine<span class="string">("Hello, World")</span>;</span>
+                        </code>
+                        <code>
+                            <span class="number-line">6</span>
+                            <span style="margin-left: 1rem;">}</span>
+                        </code>
+                        <code>
+                            <span class="number-line">7</span>
+                            <span>}</span>
+                        </code>
+                    </pre>
+
+                    <p>
+                        O programa "Hello, World" começa com uma diretiva <span class="contrast-text">using</span> que faz referência ao namespace System.
+                        Namespaces fornecem o nome das bibliotecas e programas em C#. Por exemplo, o namespace <span class="contrast-text">System</span>
+                        importa uma quantidade de tipos, como a classe Console referenciada no programa e diversos
+                        outros namespaces. Devido à diretiva <span class="contrast-text">using</span>, o programa pode usar <span class="contrast-text">Console.WriteLine</span> como um
+                        atalho para <span class="contrast-text">System.Console.WriteLine</span>.
+                    </p>
+                    <p>
+                        A classe <span class="contrast-text">Hello</span> declarada pelo programa "Hello, World" tem um único membro, o método chamado
+                        Main. O método <span class="contrast-text">Main</span> é declarado com o modificador <span class="contrast-text">static</span>. Embora os métodos de instância possam
+                        fazer referência a uma determinada instância de objeto delimitador usando a palavra-chave this,
+                        métodos estáticos operam sem referência a um objeto específico. Por convenção, um método
+                        estático denominado <span class="contrast-text">Main</span> serve como ponto de entrada de um programa C#.
+                    </p>
+                    <p>
+                        A saída do programa é produzida pelo método <span class="contrast-text">WriteLine</span> da classe <span class="contrast-text">Console</span> no namespace <span class="contrast-text">System</span>.
+                        Essa classe é fornecida pelas bibliotecas de classe padrão, que, por padrão, são referenciadas
+                        automaticamente pelo compilador.
+                    </p>
+                </div>
+            </section>
+
+            <a href="https://docs.microsoft.com/pt-br/dotnet/csharp/tour-of-csharp/" class="link-reference" title="Um tour pela linguagem C#" target="_blank">Continuar lendo</a>
+        </main>
+    </div>
+</body>
+
+</html>

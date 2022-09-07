@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW | Atributos</title>
+
+    <link rel="shortcut icon" href="../../../img/code-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+</head>
+<style>
+    main{
+        width: 90vw !important;
+        max-width: 1500px;
+    }
+    table pre {
+        width: auto;
+        margin: 0;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    td:nth-child(2), td:nth-child(3) {
+        max-width: 200px;
+    }
+</style>
+
+<body>
+    <header>
+        <button class="back" onclick="window.location.href = './'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
+        </button>
+        <h1 class="title">Atributos</h1>
+    </header>
+    <div class="main">
+        <main>
+            <section>
+                <h3 id="attribute">
+                    <a href="#attribute">#</a>
+                    Atributos
+                </h3>
+
+                <div class="content">
+                    <div class="table">
+                        <table>
+                            <tr class="header">
+                                <th>Nome do atributo</th>
+                                <th>Elemento</th>
+                                <th>Descrição</th>
+                                <!-- <th>Exemplo</th> -->
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const listContent = {
+            attribute: [
+                "alt", 
+                "autocomplete", 
+                "autoplay",
+                "checked",
+                "class",
+                "colspan",
+                "rowspan",
+                "controls",
+                "disabled",
+                "dropzone",
+                "for",
+                "href",
+                "id",
+                "lang",
+                "max",
+                "maxlength",
+                "method",
+                "min",
+                "multiple",
+                "name",
+                "rel",
+                "required",
+                "reversed",
+                "rows",
+                "src",
+                "style",
+                "target",
+                "title",
+                "type"
+
+
+            ],
+            element: [
+                "&ltimg&gt, &ltinput&gt", 
+                "&ltform&gt, &ltinput&gt",
+                "&ltaudio&gt, &ltvideo&gt",
+                "&ltinput&gt",
+                "Atributo global",
+                "&lttd&gt, &ltth&gt",
+                "&ltimg&gt, &ltinput&gt",
+                "&ltaudio&gt, &ltvideo&gt",
+                "&ltbutton&gt, &ltinput&gt, &lttextarea&gt, &ltselect&gt",
+                "Atributo global",
+                "&ltlabel&gt",
+                "&lta&gt, &ltlink&gt",
+                "Atributo global",
+                "Atributo global",
+                "&ltinput&gt, &ltmeter&gt, &ltprogress&gt",
+                "&ltinput&gt, &lttextarea&gt",
+                "&ltform&gt",
+                "&ltinput&gt, &ltmeter&gt",
+                "&ltinput&gt, &ltselect&gt",
+                "&ltbutton&gt, &ltform&gt, &ltfieldset&gt, &ltiframe&gt, &ltinput&gt, &ltkeygen&gt, &ltobject&gt, &ltoutput&gt, &ltselect&gt, &lttextarea&gt, &ltmap&gt, &ltmeta&gt, &ltparam&gt",
+                "&lta&gt, &ltarea&gt, &ltlink&gt",
+                "&ltinput&gt, &ltselect&gt, &lttextarea&gt",
+                "&ltol&gt",
+                "&lttextarea&gt",
+                "&ltaudio&gt, &ltembed&gt, &ltiframe&gt, &ltimg&gt, &ltinput&gt, &ltscript&gt, &ltsource&gt, &lttrack&gt, &ltvideo&gt",
+                "Atributo global",
+                "&lta&gt, &ltarea&gt, &ltbase&gt, &ltform&gt",
+                "Atributo global",
+                "&ltbutton&gt, &ltinput&gt, &ltembed&gt, &ltobject&gt, &ltscript&gt, &ltsource&gt, &ltstyle&gt, &ltmenu&gt",
+            ],
+            description: [
+                "Texto alternativo caso uma imagem não possa ser exibida.", 
+                "Indica se controles neste formulário podem por padrão ter seus valores completados automaticamente pelo navegador.", 
+                "O aúdio ou vídeo deve ser reproduzido assim que possível.",
+                "Indica se o elemento deve ser checado no carregamento da página.",
+                "Frequentemente usado com CSS para estilizar os elementos com propriedades comuns.",
+                "O atributo colspan define o número de colunas que uma célula deve conter.",
+                "O atributo rowspan define o número de linhas que uma célula deve conter.",
+                "Indica se o navegador deve mostrar ou não os controles de reprodução ao usuário.",
+                "Indica se o usuário pode ou não interagir com o elemento.",
+                "Indica que o elemento aceita a soltagem de conteúdo nele.",
+                "Descreve elementos na qual pertencem a este.",
+                "A URL de um recurso ligado.",
+                "Frequentemente usado com CSS para estilizar um elemento específico. O valor deste atributo deve ser único.",
+                "Define o idioma usado no elemento.",
+                "Indica o valor máximo permitido.",
+                "Define o núemro máximo de caracteres permitido no elemento.",
+                "Define qual método HTTP usar quando enviar um formulário. Pode ser GET(padrão) ou POST.",
+                "Indica o valor mínimo permitido.",
+                "Indica se múltiplos valores podem ser inseridos em uma entrada do tipo email ou file.",
+                "Nome do elemento. Por exemplo usado pelo servidor para identificar os campos no envio do formulário.",
+                "Especifica o relacionamento do objeto alvo para o objeto ligado.",
+                "Indica se este elemento é requerido para preencher ou não.",
+                "Indica se a lista deveria ser mostrada em uma ordem decrescente em vez de uma crescente.",
+                "Define o número de linhas em uma área de texto.",
+                "URL de um conteúdo incorporável.",
+                "Define estilos CSS na qual ultrapassarão estilos previamente configurados.",
+                " ",
+                "Texto a ser mostrado em uma dica quando suspenso sobre um elemento.",
+                "Define o tipo de elemento.",
+                
+
+            ],
+            example: ["test"]
+        }
+        const $table = document.querySelector('.header')
+
+        for (let i = 0; i < listContent.attribute.length; i++) {
+            $table.insertAdjacentHTML('afterend', `
+                <tr>
+                    <td>${listContent.attribute.reverse()[i]}</td>
+                    <td>${listContent.element.reverse()[i]}</td>
+                    <td>${listContent.description.reverse()[i]}</td>
+                    <!--<td>
+                        <pre>
+                            <code>
+                                <span class="number-line">1</span>
+                                <span class="contrast">int </span>
+                                <span>number = </span>
+                                <span class="number">13</span>
+                                <span>;</span>
+                            </code>
+                        </pre>
+                    </td>-->
+                </tr>
+            `)
+        }
+    </script>
+
+</body>
+
+</html>

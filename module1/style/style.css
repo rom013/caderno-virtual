@@ -78,7 +78,13 @@ article{
     top: 24px;
     left: 64px;
 }
-
+.link-reference{
+    font-size: 1rem;
+    color: #999;
+}
+.link-reference:hover{
+    text-decoration: underline;
+}
 nav{
     display: flex;
     flex-direction: column;
@@ -145,8 +151,6 @@ table{
 th,td, table{
     border: 1px solid #101010;
     padding: 10px;
-}
-tr td:nth-child(1){
     text-align: center;
     vertical-align: middle;
 }
@@ -154,6 +158,7 @@ th{
     background: #7e00ff;
     color: #fff;
     font-weight: 800;
+    vertical-align: middle;
 }
 .list-discipline {
     display: flex;
@@ -226,6 +231,14 @@ th{
     fill: #fff;
 }
 
+.contrast-text{
+    padding: 4px 8px;
+    background: #263238;
+    color: #fff;
+    font-family: monospace;
+    border-radius: 5px;
+    font-size: 10px;
+}
 
 pre{
     background: #263238 !important;
@@ -280,5 +293,7 @@ code .string{
 code .number{
     color: #adc5a1;
 }
-
+code .tag{
+    color: #db7171;
+}
 /* [#e5ccff, #cb99ff, #b266ff, #7e00ff, #6500cc, #4c0099, #320066] */
