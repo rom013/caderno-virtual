@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades</title>
+
+    <link rel="shortcut icon" href="../../../img/code-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<style>
+    main{
+        width: 100% !important;
+    }
+</style>
+<body>
+    <header>
+        <button class="back" onclick="window.location.href = './'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+        </button>
+        <h1 class="title" style="text-align: center; display: block;">Seletores</h1>
+    </header>
+    <div class="main">
+        <main>
+    
+            <section>
+                <h3 id="border">
+                    <a href="#border">#</a>
+                    Seletores
+                </h3>
+    
+                <div class="table">
+                    <table>
+                        <tr>
+                            <th>Seletor</th>
+                            <th>Função</th>
+                            <th>Exemplo CSS</th>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Seleciona todas as tags HTML</td>
+                            <td>*{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x</td>
+                            <td>Seleciona todas tags x</td>
+                            <td>x {color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x y</td>
+                            <td>Seleciona todas as tags z que estiver contido num elemento x</td>
+                            <td>x y{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x > y</td>
+                            <td>Seletor de elemento-filho: Seleciona qualquer elemento y descendente direto de uma tag x</td>
+                            <td>x > y{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x + y</td>
+                            <td>Seleciona o elemento y que estiver após um elemento x</td>
+                            <td>x + y{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x .class</td>
+                            <td>Seleciona o elemento x em que se aplicou a "classe"</td>
+                            <td>x .y{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x #id</td>
+                            <td>Seleciona o elemento x identificado com Id</td>
+                            <td>x #id{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x,y</td>
+                            <td>Seleciona o elemento x e y</td>
+                            <td>x,y{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x[atributo]</td>
+                            <td>Seleciona o elemento x que contenha o atributo indicado</td>
+                            <td>x[title]{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x[atributo="valor"]</td>
+                            <td>Seleciona o elemento x que contenha o atributo e o valor indicado</td>
+                            <td>input[type=number]{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>x:first-child</td>
+                            <td>Seleciona o primeiro filho da tag x</td>
+                            <td>x:first-child {color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>a:link</td>
+                            <td>Aplica-se ao elemento com link ainda não visitado</td>
+                            <td>a:link{color: violet}</td>
+                        </tr>
+
+                        <tr>
+                            <td>a:visited</td>
+                            <td>Aplica-se ao elemento com link já visitado</td>
+                            <td>a:visited{color: violet}</td>
+                        </tr>
+                        <tr>
+                            <td>x:active</td>
+                            <td>Aplica-se ao elemento x quando este for ativado pelo usuário</td>
+                            <td>a:active{color: violet}</td>
+                        </tr>
+                        <tr>
+                            <td>x:hover</td>
+                            <td>Aplica-se ao elemento x quando o usuário estiver com o cursor sobre o elemento</td>
+                            <td>x:hover{color: violet}</td>
+                        </tr>
+                        <tr>
+                            <td>x:focus</td>
+                            <td>Aplica-se ao elemento x quando o usuário estiver com o cursor precionado</td>
+                            <td>x:focus{color: violet}</td>
+                        </tr>
+
+                        
+                    </table>
+                </div>
+            </section>
+        </main>    
+    </div>
+</body>
+</html>

@@ -153,6 +153,7 @@ th,td, table{
     padding: 10px;
     text-align: center;
     vertical-align: middle;
+    line-height: 3ch;
 }
 th{
     background: #7e00ff;
@@ -160,6 +161,10 @@ th{
     font-weight: 800;
     vertical-align: middle;
 }
+tr td:nth-child(1){
+    font-weight: 600;
+}
+
 .list-discipline {
     display: flex;
     flex-direction: column;

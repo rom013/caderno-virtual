@@ -1,91 +1,40 @@
 <section>
-            <h3 id="formInput">
-                <a href="#formInput">#</a>
-                FORM & INPUT
-            </h3>
+    <h3 id="program">
+        <a href="#program">#</a>
+        PROGRAMAÇÃO
+    </h3>
 
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis laudantium. Beatae consectetur voluptatibus, qui, rerum expedita eos enim illo, magni ratione eligendi neque commodi cupiditate esse dolor pariatur nostrum.</p>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis laudantium. Beatae consectetur voluptatibus, qui, rerum expedita eos enim illo, magni ratione eligendi neque commodi cupiditate esse dolor pariatur nostrum.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&ltform&gt</td>
-                            <td>lor</td>
-                        </tr>
-                        <tr>
-                            <td>&ltinput&gt</td>
-                            <td>lor</td>
-                        </tr>
-                        <tr>
-                            <td>&ltbutton&gt</td>
-                            <td>lorem</td>
-                        </tr>
-                        <tr>
-                            <td>&ltlabel&gt</td>
-                            <td>lor</td>
-                        </tr>
-                        <tr>
-                            <td>&lttextarea&gt</td>
-                            <td>lor</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Tag</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td>&ltscript&gt</td>
+                    <td>lor</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
 
 
-        <section>
-            <h3 id="links">
-                <a href="#links">#</a>
-                LINKS
-            </h3>
 
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis laudantium. Beatae consectetur voluptatibus, qui, rerum expedita eos enim illo, magni ratione eligendi neque commodi cupiditate esse dolor pariatur nostrum.</p>
 
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&lta&gt</td>
-                            <td>lor</td>
-                        </tr>
-                        <tr>
-                            <td>&ltnav&gt</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
+*** BD
+** Modelagem conceitual - Introdução
+** Modelagem conceitual - Cardinalidade
 
-        <section>
-            <h3 id="program">
-                <a href="#program">#</a>
-                PROGRAMAÇÃO
-            </h3>
+*** PA 
+** Algoritmo
+** C# > Condicional (IF)
 
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, officiis laudantium. Beatae consectetur voluptatibus, qui, rerum expedita eos enim illo, magni ratione eligendi neque commodi cupiditate esse dolor pariatur nostrum.</p>
-
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>Tag</th>
-                            <th>Descrição</th>
-                        </tr>
-                        <tr>
-                            <td>&ltscript&gt</td>
-                            <td>lor</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </section>
+*** PW 
+** Seletores
+** Media queries
+** Pseudo-classe
+** Animation

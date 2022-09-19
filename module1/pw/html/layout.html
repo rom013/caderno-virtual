@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT HTML</title>
+
+    <link rel="shortcut icon" href="../../../img/code-solid.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../../../style/reset.css">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/media.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
+</head>
+<style>
+    main {
+        width: 100% !important;
+    }
+
+    .box {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "section section aside"
+            "article article aside"
+            "footer footer footer";
+    }
+
+    .container>div {
+        background: rgba(238, 238, 238, 0.5);
+        padding: 1rem;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        font-weight: 800;
+    }
+
+    .aside {
+        grid-area: aside;
+        flex-direction: column;
+        height: 150px;
+    }
+    .aside:hover {
+        outline: 2px solid #44ff00;
+    }
+    .aside div{
+        position: absolute;
+        width: 100%;
+        background: rgba(238, 238, 238, 0.8);
+        padding: 1rem;
+        top: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 8;
+    }
+    .aside div:hover{
+        outline: 2px solid #ff0044;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .header:hover {
+        outline: 2px solid #ff6f00;
+    }
+
+    .nav {
+        grid-area: nav;
+    }
+
+    .nav:hover {
+        outline: 2px solid #00fbff;
+    }
+
+    .section {
+        grid-area: section;
+    }
+
+    .section:hover {
+        outline: 2px solid #ff00e6;
+    }
+
+    .article {
+        grid-area: article;
+    }
+
+    .article:hover {
+        outline: 2px solid #001eff;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    .footer:hover {
+        outline: 2px solid #44ff00;
+    }
+</style>
+
+<body>
+    <header>
+        <button class="back" onclick="window.location.href = './'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+            </svg>
+        </button>
+        <h1 class="title">LAYOUT HTML</h1>
+    </header>
+    <div class="main">
+        <main>
+            <section>
+                <div class="box">
+                    <div class="container">
+                        <div class="aside">
+                            <div>nav</div>
+                            aside
+                        </div>
+                        <div class="header">header</div>
+                        <div class="nav">nav</div>
+                        <div class="section">section</div>
+                        <div class="article">article</div>
+                        <div class="footer">footer</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
