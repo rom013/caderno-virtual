@@ -1,36 +1,66 @@
+
 @media only screen and (max-width: 800px){
-    header{
+    
+    .main-container{
         flex-direction: column;
-        gap: 2.5rem;
-    }
-    .profile{
-        align-items: center;
-        width: 100%;
+        display: flex;
+        gap: 64px;
     }
     .network{
-        padding: 5px 20px;
+        top: 100px;
+        flex-direction: row;
     }
-    .profile img{
-        width: 150px;
+}
+
+@media only screen and (max-width: 600px){
+    .open{
+        display: flex;
     }
-    .bio{
+    .profile, .network, .painel{
+        display: none;
+    }
+    .menu-mobile{
+        display: flex;
+    }
+    .main-container{
+        /* margin: 0 40px 64px 40px; */
         width: 100%;
-        text-align: center;
     }
-    header h1{
-        font-size: 2rem;
+    .main-header{
+        padding: 0 40px;
+        height: 80px;
+    }
+    .logo{
+        height: 32px;
+        gap: 12px;
+        font-size: 12px;
+    }
+    .logo div, .logo img{
+        height: 100%;
     }
     main{
-        margin: 3rem 24px;
+        padding: 0 40px;
+        box-sizing: border-box;
     }
-    .content-box{
+    .contents-details div{
+        width: 64px;
+        height: 64px;
+        font-size: 24px;
+    }
+    /*  */
+    .nav-mobile{
         flex-direction: column;
-        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
     }
-    .box{
+    .nav-mobile a, .nav-mobile button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 64px;
         width: 100%;
-        height: auto;
-        transition: 1s;
-        font-size: 1rem;
+        gap: 16px;
+        font-size: 24px;
     }
 }

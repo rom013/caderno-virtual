@@ -1,75 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rômullo Melo</title>
+    <title>Caderno Virtual | Rômullo - DS</title>
 
     <link rel="shortcut icon" href="img/code-solid.svg" type="image/x-icon">
-    
-    <link rel="stylesheet" href="style/reset.css">
+
+    <!-- <link rel="stylesheet" href="style/reset.css"> -->
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/animation.css">
-    <link rel="stylesheet" href="style/media.css">
+    <!-- <link rel="stylesheet" href="style/animation.css">-->
+    <link rel="stylesheet" href="style/media.css"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;800&display=swap" rel="stylesheet">
 
-    <script src="https://unpkg.com/phosphor-icons"></script>
+    
 </head>
+
 <body>
-    <header>
+    <header class="main-header">
+        <div class="logo">
+            <div>
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <span>Caderno Virtual</span>
+        </div>
+
         <div class="profile">
-            <img src="https://github.com/rom013.png" alt="foto de perfil" >
-            <div class="network">
-                <a href="https://instagram.com/romu_013" target="_blank" class="insta" title="Instagram">
-                    <i class="ph-instagram-logo"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/rômullo-melo-124007227/" target="_blank" class="linkedin" title="Linkedin">
-                    <i class="ph-linkedin-logo"></i>
-                </a>
-                <a href="https://github.com/rom013" target="_blank" class="git" title="Github">
-                    <i class="ph-github-logo"></i>
-                </a>
+            <span class="name-profile">Rômullo Melo</span>
+            <div class="frame-profile">
+                <div class="img-profile">
+                    <img src="https://github.com/rom013.png" alt="Rômullo (rom013)">
+                </div>
             </div>
         </div>
-        <div class="bio">
-            <span>Olá! Eu sou</span>
-            <h1>Rômullo Melo</h1>
-            <p>
-                Estudo front-end a 1 ano. Atualmente estou estudando Desenvolvimento de sistemas.
-            </p>
+
+        <div class="network">
+            <a href="https://www.linkedin.com/in/rômullo-melo-124007227/" target="_blank" class="container-network">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://instagram.com/romu_013"  target="_blank" class="container-network">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/rom013" target="_blank" class="container-network">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <button onclick="darkMode()" class="container-network">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+            </button>
+        </div>
+
+        <div class="menu-mobile">
+            <span></span>
         </div>
     </header>
 
-    <main>
-        <h2>Módulos</h2>
+    <div class="painel">
+        <a href="#">
+            <div class="icon-painel">
+                <img src="img/icons_file.svg" alt="Arquivos">
+            </div>
+            <span>Arquivos</span>
+        </a>
+        <a href="#">
+            <div class="icon-painel">
+                <img src="img/icons_flag.svg" alt="Desafios">
+            </div>
+            <span>Desafios</span>
+        </a>
+        <a href="#">
+            <div class="icon-painel">
+                <img src="img/icon-quiz.svg" alt="Quiz">
+            </div>
+            <span>Quiz</span>
+        </a>
+    </div>
 
-        <section class="content-box">
-            <div class="box" data-="1">
-                <span>1º Módulo</span>
+    <main>
+        <div class="main-container">
+            <div class="course">
+                <h3>CURSOS</h3>
+                <div class="container-course">
+                    <div class="course-title">
+                        <p>Desenvolvimento de sistemas</p>
+                        <span>08.2022 - 2023</span>
+                    </div>
+    
+                    <div class="module">
+                        <input type="checkbox" name="tes" id="details-1">
+                        <div class="details">
+                            <label for="details-1" class="details-header">
+                                <span>1º MÓDULO</span>
+                                <span class="arrow-details">
+                                    <i class="fa-solid fa-caret-up"></i>
+                                </span>
+                            </label>
+    
+                            <div class="contents-details">
+                                <div>
+                                    <a href="module1/pw/index.html">PW</a>
+                                </div>
+                                <div>
+                                    <a href="module1/pa/index.html">PA</a>
+                                </div>
+                                <div>
+                                    <a href="module1/bd/index.html">BD</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="module">
+                        <!-- <input type="checkbox" name="tes" id="details-2"> -->
+                        <div class="details">
+                            <label for="details-2" class="details-header block">
+                                <span>2º MÓDULO</span>
+                                <span class="arrow-details">
+                                    <i class="fa-solid fa-caret-up"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="module">
+                        <!-- <input type="checkbox" name="tes" id="details-3"> -->
+                        <div class="details ">
+                            <label for="details-3" class="details-header block">
+                                <span>3º MÓDULO</span>
+                                <span class="arrow-details">
+                                    <i class="fa-solid fa-caret-up"></i>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="box block" data-="">
-                <span>Em Breve</span>
+            <div class="plus">
+                <h2>PLUS</h2>
+                <div class="container-plus">
+                    <span style="font-size: 5rem;">EM BREVE</span>
+                </div>
+    
+                <img src="img/education.svg" alt="">
             </div>
-            <div class="box block" data-="">
-                <span>Em Breve</span>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <script>
-        const t = Array.from(document.querySelectorAll(".box"))
-        t.forEach((e)=>{
-            e.addEventListener('click', ()=>test(e.attributes[1].value))
-        })
+    <div class="nav-mobile">
+        <a href="#">
+            <div class="icon-painel">
+                <img src="img/icons_file.svg" alt="Arquivos">
+            </div>
+            <span>Arquivos</span>
+        </a>
+        <a href="#">
+            <div class="icon-painel">
+                <img src="img/icons_flag.svg" alt="Desafios">
+            </div>
+            <span>Desafios</span>
+        </a>
+        <a href="#">
+            <div class="icon-painel">
+                <img src="img/icon-quiz.svg" alt="Quiz">
+            </div>
+            <span>Quiz</span>
+        </a>
 
-        function test(e){
-            e == "" ? null : window.location.href = `module${e}`
+        <button onclick="darkMode()" class="container-network">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+            Tema
+        </button>
+    </div>
+
+    <script>
+        document.querySelector(".menu-mobile").addEventListener("click", menuMobile)
+        const navMobile = document.querySelector(".nav-mobile")
+        const barMenuMobile = document.querySelector(".menu-mobile")
+        const statusMode = localStorage.getItem("dark")
+        
+        
+        if(statusMode == 'true'){
+            darkMode()
+        }
+
+        function menuMobile(){
+            navMobile.classList.toggle("open")
+            barMenuMobile.classList.toggle("active")
+        }
+        function darkMode(){
+            const mode = document.body.classList.toggle("dark")
+            window.localStorage.setItem('dark', mode)
         }
     </script>
+    <script src="https://kit.fontawesome.com/1faa20ab11.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

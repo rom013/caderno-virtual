@@ -31,10 +31,9 @@
 
 *** PA 
 ** Algoritmo
-** C# > Condicional (IF)
 
-*** PW 
-** Seletores
+*** PW  
+** Flex Box
 ** Media queries
 ** Pseudo-classe
 ** Animation
